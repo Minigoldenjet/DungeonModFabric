@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dungeonmod",
+	"version": "1.0",
+	"name": "Dungeon Mod",
+	"description": "DungeonMod",
+	"authors": [
+		"Nyeonite"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dungeonmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.soloneliott.dungeonmod.DungeonMod"
+		],
+		"fabric-datagen": [
+			"net.soloneliott.dungeonmod.DungeonModDataGenerator"
+		],
+		"client": [
+			"net.soloneliott.dungeonmod.DungeonModClient"
+		]
+	},
+	"mixins": [
+		"dungeonmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
